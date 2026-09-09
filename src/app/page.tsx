@@ -52,7 +52,7 @@ export default function Home() {
         <div className="container hero-inner">
           <Eyebrow>NADAČNÍ FOND UMĚNÍ SPÁT</Eyebrow>
           <h1>Spánek mění život.</h1>
-          <p className="hero-lead">Propojujeme vědu, vzdělávání a praxi, aby se kvalitní spánek stal přirozenou součástí života.</p>
+          <p className="hero-lead">Propojujeme nejnovější vědecké poznatky, vzdělávání a každodenní praxi, aby se kvalitní spánek stal přirozenou a dostupnou součástí života každého z nás.</p>
           <div className="actions"><a className="button pink" href="/partnerstvi">Staňte se partnerem</a><a className="button outline" href="#aktuality">Aktuality</a></div>
         </div>
       </section>
