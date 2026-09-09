@@ -33,7 +33,7 @@ const partners = [
   { image: "/images/partner-1.png", name: "Renocar", href: "https://www.renocar.cz/" },
   { image: "/images/partner-2.png", name: "Ski a Bike Centrum Radotín", href: "https://www.kola-radotin.cz/" },
   { image: "/images/partner-3.png", name: "LUNOOA", href: "https://www.lunooa.cz/" },
-  { image: "/images/partner-4.png", name: "NeuroTracker", href: "https://www.neurotrackerx.com/" },
+  { image: "/images/partner-4.png", name: "Bystrý mozek", href: "https://www.bystrymozek.cz/" },
   { image: "/images/partner-5.png", name: "DynaOptic", href: "https://dynaoptic.cz/" },
 ];
 
