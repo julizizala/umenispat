@@ -29,6 +29,14 @@ const news = [
   ["KAMPAŇ · 03/2027", "Měsíc spánku: Zdraví, výkon a bezpečnost začínají spánkem."],
 ];
 
+const partners = [
+  { image: "/images/partner-1.png", name: "Renocar", href: "https://www.renocar.cz/" },
+  { image: "/images/partner-2.png", name: "Ski a Bike Centrum Radotín", href: "https://www.kola-radotin.cz/" },
+  { image: "/images/partner-3.png", name: "LUNOOA", href: "https://www.lunooa.cz/" },
+  { image: "/images/partner-4.png", name: "NeuroTracker", href: "https://www.neurotrackerx.com/" },
+  { image: "/images/partner-5.png", name: "DynaOptic", href: "https://dynaoptic.cz/" },
+];
+
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return <p className="eyebrow">{children}</p>;
 }
@@ -79,7 +87,7 @@ export default function Home() {
 
       <section id="pro-firmy" className="section white"><div className="container split"><div><Eyebrow>05 — PRO FIRMY A INSTITUCE</Eyebrow><h2>Dobrý spánek je chytrá investice do lidí.</h2><p className="lead">Pomáháme organizacím otevřít téma spánku s respektem, daty<br className="desktop-break" />{" "}a konkrétním dopadem.</p><a className="button pink" href="/partnerstvi">Zjistit možnosti spolupráce</a></div><aside className="note"><h3>Spánek je firemní kultura.</h3><p>Začít lze malým krokem.<br className="desktop-break" />{" "}Měřit lze velkou změnu.</p></aside></div></section>
 
-      <section className="partners mist"><div className="container"><Eyebrow>PARTNEŘI A ODBORNÁ KOMUNITA</Eyebrow><div className="partner-logos">{[1,2,3,4,5].map(n=><Image className={n === 2 ? "partner-logo-sbcr" : undefined} key={n} src={`/images/partner-${n}.png`} alt={n === 2 ? "SBCR" : "Partnerská organizace"} width={170} height={100}/>)}</div></div></section>
+      <section className="partners mist"><div className="container"><Eyebrow>PARTNEŘI A ODBORNÁ KOMUNITA</Eyebrow><div className="partner-logos">{partners.map((partner, index)=><a key={partner.name} href={partner.href} target="_blank" rel="noopener noreferrer" aria-label={`${partner.name} – otevřít web`}><Image className={index === 1 ? "partner-logo-sbcr" : undefined} src={partner.image} alt={partner.name} width={170} height={100}/></a>)}</div></div></section>
 
       <section id="o-nas" className="section white about"><div className="container"><Eyebrow>06 — O NADAČNÍM FONDU</Eyebrow><div className="about-heading"><h2>Vracíme spánku místo, které mu v moderním životě patří.</h2><p>Spojujeme odborníky, firmy, veřejné instituce i veřejnost. Protože kvalitní odpočinek není luxus — je to společný zájem.</p></div><h2 className="people-title">Lidé, kteří dávají fondu směr.</h2>
         <article className="founder"><Image className="founder-photo" src="/images/alice.jpg" alt="Mgr. et Mgr. Alice Pospíšilová" width={600} height={900}/><div><Eyebrow>ZAKLADATELKA A PŘEDSEDKYNĚ SPRÁVNÍ RADY</Eyebrow><h3>Mgr. et Mgr. Alice Pospíšilová</h3><p>Zakladatelka Nadačního fondu Umění spát, neuroterapeutka, mentální koučka a certifikovaná trenérka paměti a kognitivních funkcí. Dlouhodobě propojuje poznatky o spánku, regeneraci a zdraví mozku s prevencí, vzděláváním a podporou výkonnosti. Fond založila s cílem změnit způsob, jakým společnost o spánku přemýšlí – jako o základu zdraví, bezpečnosti a dlouhodobé prosperity.</p><blockquote>„Každou noc váš mozek vytváří člověka, kterým budete zítra.“</blockquote></div></article>
