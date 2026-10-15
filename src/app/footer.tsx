@@ -28,7 +28,7 @@ export default function Footer() {
           <div className={styles.contact}>
             <h2>Zůstaňme ve spojení</h2>
             <a className={styles.email} href="mailto:alice@umenispatnf.cz">alice@umenispatnf.cz <span aria-hidden="true">↗</span></a>
-            <address>Nadační fond Umění spát<br />Na Příkopě 17/1047<br />110 00 Praha 1</address>
+            <address>Umění spát, nadační fond<br />Na Příkopě 17/1047<br />110 00 Praha 1</address>
             <nav className={styles.social} aria-label="Sociální sítě">
               <a href="https://linkedin.com/company/112782902/">LinkedIn</a>
               <a href="https://instagram.com/umenispatnf/">Instagram</a>
