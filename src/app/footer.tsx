@@ -23,6 +23,7 @@ export default function Footer() {
             <Link href="/#veda">Spánek a věda</Link>
             <Link href="/partnerstvi">Partnerství</Link>
             <Link href="/#aktuality">Aktuality</Link>
+            <Link href="/ochrana-osobnich-udaju">Ochrana osobních údajů</Link>
           </nav>
           <div className={styles.contact}>
             <h2>Zůstaňme ve spojení</h2>
