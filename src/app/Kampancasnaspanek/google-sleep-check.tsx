@@ -1,10 +1,11 @@
 import Link from "next/link";
+import CampaignPhase from "./campaign-phase";
 
 const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScNaCJxmmaoUssvl0nsNUS3-x4u-yajJ8WHJN_aSXp0nOSHow/viewform";
 
 export default function GoogleSleepCheck() {
   return <div className="sleep-google">
-    <p className="eyebrow">SLEEP CHECK · 1. KOLO</p>
+    <CampaignPhase />
     <h2>Chvilka pro váš spánek.</h2>
     <p>Dotazník a odpovědi spravuje Nadační fond Umění spát prostřednictvím Google Formulářů. Dobrovolný kontakt můžete zanechat v samostatném formuláři, na který se dostanete po dokončení dotazníku.</p>
 
