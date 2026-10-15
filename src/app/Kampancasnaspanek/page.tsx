@@ -8,12 +8,11 @@ import "./sleep-check.css";
 export const metadata: Metadata = {
   title: "Čas na spánek · Sleep Check | Umění spát",
   description: "Krátké zastavení u vašeho spánku před změnou času.",
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
 };
 
 export default function CampaignPage() {
   return <main className="sleep-page">
-    <div className="sleep-preview">Dotazník připravujeme · Sběr odpovědí ještě není otevřený.</div>
     <header className="header sleep-header">
       <Link href="/" className="logo" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Nadační fond Umění spát" width={260} height={93} priority /></Link>
       <Link className="sleep-back" href="/#aktuality">← Zpět na aktuality</Link>
