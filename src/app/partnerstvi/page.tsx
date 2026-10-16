@@ -5,7 +5,7 @@ import Footer from "../footer";
 import SocialLinks from "../social-links";
 
 export const metadata: Metadata = {
-  title: "Partnerství | Nadační fond Umění spát",
+  title: "Partnerství | Umění spát, nadační fond",
   description: "Spojme síly pro zdravější, bezpečnější a výkonnější společnost.",
 };
 
@@ -17,7 +17,7 @@ const options = [
 
 function Header() {
   return <header className="header">
-    <Link href="/" className="logo" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Nadační fond Umění spát" width={260} height={93} priority /></Link>
+    <Link href="/" className="logo" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Umění spát, nadační fond" width={260} height={93} priority /></Link>
     <nav className="desktop-nav" aria-label="Hlavní navigace"><Link href="/#o-nas">O nás</Link><Link href="/#projekty">Projekty</Link><Link href="/#veda">Spánek a věda</Link><Link href="/#pro-firmy">Firmy a instituce</Link><Link href="/#aktuality">Aktuality</Link><Link href="/#kontakt">Kontakt</Link></nav>
     <SocialLinks />
     <details className="mobile-menu"><summary aria-label="Otevřít menu"><span></span><span></span><span></span></summary><nav><Link href="/#o-nas">O nás</Link><Link href="/#projekty">Projekty</Link><Link href="/#veda">Spánek a věda</Link><Link href="/#pro-firmy">Firmy a instituce</Link><Link href="/#aktuality">Aktuality</Link><Link href="/#kontakt">Kontakt</Link><SocialLinks /></nav></details>

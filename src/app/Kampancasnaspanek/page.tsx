@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function CampaignPage() {
   return <main className="sleep-page">
     <header className="header sleep-header">
-      <Link href="/" className="logo" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Nadační fond Umění spát" width={260} height={93} priority /></Link>
+      <Link href="/" className="logo" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Umění spát, nadační fond" width={260} height={93} priority /></Link>
       <Link className="sleep-back" href="/#aktuality">← Zpět na aktuality</Link>
     </header>
     <section className="sleep-hero"><div className="container sleep-hero-grid">

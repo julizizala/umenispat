@@ -6,18 +6,18 @@ import styles from "./privacy.module.css";
 
 export const metadata: Metadata = {
   title: "Ochrana osobních údajů | Umění spát",
-  description: "Jak Nadační fond Umění spát zpracovává údaje v kampani Čas na spánek a při návštěvě webu.",
+  description: "Jak Umění spát, nadační fond zpracovává údaje v kampani Čas na spánek a při návštěvě webu.",
 };
 
 export default function PrivacyPage() {
   return <main>
-    <header className="header"><Link href="/" className="logo" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Nadační fond Umění spát" width={260} height={93} priority /></Link><Link href="/Kampancasnaspanek">← Zpět ke kampani</Link></header>
+    <header className="header"><Link href="/" className="logo" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Umění spát, nadační fond" width={260} height={93} priority /></Link><Link href="/Kampancasnaspanek">← Zpět ke kampani</Link></header>
     <article className={`container ${styles.content}`}>
       <p className="eyebrow">SOUKROMÍ A DŮVĚRA</p><h1>Jak zpracováváme vaše údaje</h1>
       <p className={styles.lead}>Chceme, abyste věděli, co nám sdělujete, proč údaje potřebujeme a jak můžete rozhodovat o jejich použití.</p>
       <p className={styles.date}>Aktualizováno 15. října 2026 · Web a kampaň Čas na spánek</p>
       <aside className={styles.notice}><strong>Příprava kampaně</strong><p>Formulář je veřejně dostupný. Informace o poskytovatelích a uchování údajů ještě doplňujeme: ověříme smluvních podmínek účtu Google, konkrétních příjemců a předávání údajů a lhůt provozních záznamů a dokladů o souhlasu. Níže popisujeme způsob zpracování pro kampaň; toto upozornění není náhradou za doplnění těchto informací.</p></aside>
-      <section><h2>Kdo za údaje odpovídá</h2><p>Správcem je Nadační fond Umění spát, Na Příkopě 17/1047, 110 00 Praha 1. Dotazy k soukromí i žádosti o uplatnění práv přijímáme na <a href="mailto:alice@umenispatnf.cz">alice@umenispatnf.cz</a>.</p></section>
+      <section><h2>Kdo za údaje odpovídá</h2><p>Správcem je Umění spát, nadační fond, Na Příkopě 17/1047, 110 00 Praha 1. Dotazy k soukromí i žádosti o uplatnění práv přijímáme na <a href="mailto:alice@umenispatnf.cz">alice@umenispatnf.cz</a>.</p></section>
       <section><h2>Co zjišťujeme v dotazníku</h2><p>Sleep Check je dobrovolný dotazník pro dospělé od 18 let. Zpracováváme věkovou skupinu, pracovní režim, odpovědi o spánku, ranní odpočatosti, denním fungování, sledování spánku a okolnostech, které jej mohou ovlivnit. Součástí záznamu je vámi zvolený kód respondenta, čas odeslání a udělený souhlas.</p><p>Jméno ani e-mail nejsou podmínkou vyplnění Sleep Checku. Do otevřených odpovědí prosím nepište jména, kontakty ani údaje o jiných osobách. Dotazník neslouží ke stanovení diagnózy.</p></section>
       <section><h2>Proč údaje zpracováváme</h2><p>Odpovědi použijeme k vyhodnocení kampaně Čas na spánek a porovnání spánku před změnou času a po ní. Právním základem je souhlas podle čl. 6 odst. 1 písm. a) GDPR. Protože některé odpovědi mohou vypovídat o zdravotním stavu, vyžadujeme také výslovný souhlas podle čl. 9 odst. 2 písm. a) GDPR.</p><p>Bez tohoto souhlasu nelze dotazník odeslat. Ostatní obsah webu můžete používat i bez účasti. Neprovádíme automatizované rozhodování s právními nebo obdobně významnými účinky.</p></section>
       <section><h2>Jak propojíme obě kola</h2><p>V prvním i druhém dotazníku uvedete stejný vlastní kód. Nepoužívejte k jeho vytvoření osobní údaje. Kód si uložte, protože jej budete potřebovat také při žádosti o dohledání nebo odstranění odpovědí.</p><p>Dobrovolný kontakt sbíráme samostatným formulářem. Pokud v něm uvedete stejný kód, lze kontakt propojit s odpověďmi. Takový sběr je pseudonymizovaný, nikoli anonymní. Výsledky zveřejníme pouze souhrnně tak, aby nebylo možné identifikovat jednotlivé účastníky.</p></section>

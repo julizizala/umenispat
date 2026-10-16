@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
         <div className={styles.grid}>
           <div className={styles.brand}>
-            <Link href="/" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Nadační fond Umění spát" width={220} height={79} /></Link>
+            <Link href="/" aria-label="Umění spát – domů"><Image src="/images/logo.png" alt="Umění spát, nadační fond" width={220} height={79} /></Link>
             <p>Vracíme spánku místo,<br />které mu v životě patří.</p>
           </div>
           <nav className={styles.links} aria-label="Navigace v zápatí">

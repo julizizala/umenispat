@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nadační fond Umění spát",
+  title: "Umění spát, nadační fond",
   description: "Spánek mění život. Nadační fond pro zdraví, výkon a bezpečnost.",
 };
 

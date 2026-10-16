@@ -46,7 +46,7 @@ export default function Home() {
     <main>
       <header className="header">
         <a href="#top" className="logo" aria-label="Umění spát – domů">
-          <Image src="/images/logo.png" alt="Nadační fond Umění spát" width={260} height={93} priority />
+          <Image src="/images/logo.png" alt="Umění spát, nadační fond" width={260} height={93} priority />
         </a>
         <nav className="desktop-nav" aria-label="Hlavní navigace">
           <a href="#o-nas">O nás</a><a href="#projekty">Projekty</a><a href="#veda">Spánek a věda</a>
@@ -58,7 +58,7 @@ export default function Home() {
 
       <section id="top" className="hero navy">
         <div className="container hero-inner">
-          <Eyebrow>NADAČNÍ FOND UMĚNÍ SPÁT</Eyebrow>
+          <Eyebrow>Umění spát, nadační fond</Eyebrow>
           <h1>Spánek mění život.</h1>
           <p className="hero-lead">Propojujeme vědu, vzdělávání a praxi, aby se kvalitní spánek stal přirozenou součástí života.</p>
           <div className="actions"><a className="button pink" href="/partnerstvi">Staňte se partnerem</a><a className="button outline" href="#aktuality">Aktuality</a></div>
@@ -90,7 +90,7 @@ export default function Home() {
       <section className="partners mist"><div className="container"><Eyebrow>PARTNEŘI A ODBORNÁ KOMUNITA</Eyebrow><div className="partner-logos">{partners.map((partner, index)=><a key={partner.name} href={partner.href} target="_blank" rel="noopener noreferrer" aria-label={`${partner.name} – otevřít web`}><Image className={index === 1 ? "partner-logo-sbcr" : undefined} src={partner.image} alt={partner.name} width={170} height={100}/></a>)}</div></div></section>
 
       <section id="o-nas" className="section white about"><div className="container"><Eyebrow>06 — O NADAČNÍM FONDU</Eyebrow><div className="about-heading"><h2>Vracíme spánku místo, které mu v moderním životě patří.</h2><p>Spojujeme odborníky, firmy, veřejné instituce i veřejnost. Protože kvalitní odpočinek není luxus — je to společný zájem.</p></div><h2 className="people-title">Lidé, kteří dávají fondu směr.</h2>
-        <article className="founder"><Image className="founder-photo" src="/images/alice.jpg" alt="Mgr. et Mgr. Alice Pospíšilová" width={600} height={900}/><div><Eyebrow>ZAKLADATELKA A PŘEDSEDKYNĚ SPRÁVNÍ RADY</Eyebrow><h3>Mgr. et Mgr. Alice Pospíšilová</h3><p>Zakladatelka Nadačního fondu Umění spát, neuroterapeutka, mentální koučka a certifikovaná trenérka paměti a kognitivních funkcí. Dlouhodobě propojuje poznatky o spánku, regeneraci a zdraví mozku s prevencí, vzděláváním a podporou výkonnosti. Fond založila s cílem změnit způsob, jakým společnost o spánku přemýšlí – jako o základu zdraví, bezpečnosti a dlouhodobé prosperity.</p><blockquote>„Každou noc váš mozek vytváří člověka, kterým budete zítra.“</blockquote></div></article>
+        <article className="founder"><Image className="founder-photo" src="/images/alice.jpg" alt="Mgr. et Mgr. Alice Pospíšilová" width={600} height={900}/><div><Eyebrow>ZAKLADATELKA A PŘEDSEDKYNĚ SPRÁVNÍ RADY</Eyebrow><h3>Mgr. et Mgr. Alice Pospíšilová</h3><p>Zakladatelka fondu „Umění spát, nadační fond“, neuroterapeutka, mentální koučka a certifikovaná trenérka paměti a kognitivních funkcí. Dlouhodobě propojuje poznatky o spánku, regeneraci a zdraví mozku s prevencí, vzděláváním a podporou výkonnosti. Fond založila s cílem změnit způsob, jakým společnost o spánku přemýšlí – jako o základu zdraví, bezpečnosti a dlouhodobé prosperity.</p><blockquote>„Každou noc váš mozek vytváří člověka, kterým budete zítra.“</blockquote></div></article>
         <div className="board">{[["board-1.png","ČLENKA SPRÁVNÍ RADY","Ing. Michaela Kryšpínová"],["board-2.jpg","ČLEN SPRÁVNÍ RADY","doc. JUDr. Aleš Rozehnal, Ph.D."],["board-3.jpg","REVIZORKA","Ing. Viera Hladišová"]].map(([img,role,name], index)=><article key={name}><Image className={`board-photo board-photo-${index + 1}`} src={`/images/${img}`} alt={name} width={420} height={420}/><Eyebrow>{role}</Eyebrow><h3>{name}</h3></article>)}</div>
       </div></section>
 
@@ -100,7 +100,7 @@ export default function Home() {
 
       <section className="cta navy"><SleepArt className="cta-art" /><div className="container"><Eyebrow>PARTNERSTVÍ PRO LEPŠÍ NOCI</Eyebrow><h2>Pojďme dát spánku váhu, kterou si zaslouží.</h2><p>Nabízíme strategické partnerství, podporu konkrétních projektů i odbornou<br className="desktop-break" />{" "}a technologickou spolupráci.</p><a className="button pink" href="/partnerstvi">Navázat spolupráci</a></div></section>
 
-      <section id="kontakt" className="section white contact"><div className="container"><div className="contact-intro"><h2>Spojme se!</h2><p>Máte zájem o odbornou spolupráci, partnerství nebo podporu některého z našich projektů? Napište nám.</p></div><div className="contact-grid"><div><h3>Mgr. et Mgr. Alice Pospíšilová</h3><p>Zakladatelka a předsedkyně správní rady</p><a href="mailto:alice@umenispatnf.cz">alice@umenispatnf.cz</a><a href="tel:+420603838333">+420 603 838 333</a><address>Umění spát, nadační fond<br/>Na Příkopě 17/1047<br/>110 00 Praha 1</address></div><div className="support"><Eyebrow>Podpořte naši práci</Eyebrow><div className="payment-details"><div className="payment-bank"><p className="payment-label">Číslo účtu</p><strong className="payment-account">207966005/5500</strong></div><p className="payment-message"><span>Zpráva pro příjemce</span>Nadační fond Umění spát.</p></div><div className="payment-qr"><Image src="/images/qr-payment.png" alt="QR kód pro platbu na účet Nadačního fondu Umění spát" width={255} height={255}/><small>QR kód skenujte přímo v aplikaci mobilního bankovnictví.</small></div></div></div></div></section>
+      <section id="kontakt" className="section white contact"><div className="container"><div className="contact-intro"><h2>Spojme se!</h2><p>Máte zájem o odbornou spolupráci, partnerství nebo podporu některého z našich projektů? Napište nám.</p></div><div className="contact-grid"><div><h3>Mgr. et Mgr. Alice Pospíšilová</h3><p>Zakladatelka a předsedkyně správní rady</p><a href="mailto:alice@umenispatnf.cz">alice@umenispatnf.cz</a><a href="tel:+420603838333">+420 603 838 333</a><address>Umění spát, nadační fond<br/>Na Příkopě 17/1047<br/>110 00 Praha 1</address></div><div className="support"><Eyebrow>Podpořte naši práci</Eyebrow><div className="payment-details"><div className="payment-bank"><p className="payment-label">Číslo účtu</p><strong className="payment-account">207966005/5500</strong></div><p className="payment-message"><span>Zpráva pro příjemce</span>Umění spát, nadační fond.</p></div><div className="payment-qr"><Image src="/images/qr-payment.png" alt="QR kód pro platbu na účet Umění spát, nadační fond" width={255} height={255}/><small>QR kód skenujte přímo v aplikaci mobilního bankovnictví.</small></div></div></div></div></section>
 
       <Footer />
     </main>
